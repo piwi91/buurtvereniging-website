@@ -1,0 +1,42 @@
+baseurl = "/"
+title = "Mainroad"
+languageCode = "nl-NL"
+paginate = "10" # Number of posts per page
+theme = "mainroad"
+# googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+
+[Author]
+  name = "Buurtvereniging Eiland-Brandt"
+  bio = "Waar gezelligheid en saamhorigheid de buurt samenbrengen"
+  avatar = "img/avatar.png"
+
+[Params]
+  description = "De digitale omgeving van Buurtvereniging Eiland-Brandt waarmee je op de hoogte blijft van al onze activiteiten"
+  opengraph = true
+  twitter_cards = false
+  readmore = false
+  authorbox = false
+  pager = true
+  post_meta = ["date", "categories"]
+  mainSections = ["post", "docs"]
+
+[Params.logo]
+  title = "Buurtvereniging Eiland-Brandt"
+  subtitle = "Waar gezelligheid en saamhorigheid de buurt samenbrengen"
+
+[Params.sidebar]
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "taglist"]
+
+[Params.widgets]
+  recent_num = 5
+  categories_counter = false
+  tags_counter = false
+
+[menus.main]
+  name = 'Home'
+  pageRef = '/'
+  weight = 10
