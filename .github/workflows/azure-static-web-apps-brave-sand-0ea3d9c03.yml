@@ -55,6 +55,7 @@ jobs:
           app_location: "/" # App source code path
           output_location: "public" # Built app content directory - optional
           github_id_token: ${{ steps.idtoken.outputs.result }}
+          skip_app_build: true
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
