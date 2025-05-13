@@ -1,7 +1,6 @@
 baseurl = "/"
 title = "Mainroad"
 languageCode = "nl-NL"
-paginate = "10" # Number of posts per page
 theme = "mainroad"
 # googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
@@ -36,7 +35,13 @@ theme = "mainroad"
   categories_counter = false
   tags_counter = false
 
-[menus.main]
-  name = 'Home'
-  pageRef = '/'
-  weight = 10
+[pagination]
+  disableAliases = false
+  pagerSize = 10
+  path = 'page'
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
