@@ -1,0 +1,23 @@
+{{- $recent := (where .Site.RegularPages "Type" "in" "activiteiten") }}
+{{- $recent_num := (.Site.Params.widgets.recent_num | default 10) }}
+{{- $activities := sort $recent ".Params.event_date" "asc" }}
+
+{{- if $activities }}
+<div class="widget-recent widget">
+	<h4 class="widget__title">Laatste activiteiten</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			{{- range first $recent_num $activities }}
+			<li class="widget__item">
+				<section style="float: right">
+					<time class="meta__text" date="{{ .Params.event_date | time | dateFormat "2006-01-02" }}">
+						<i>{{- .Params.event_date | time | dateFormat ":date_long" }}</i>
+					</time>
+				</section>
+				<a class="widget__link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+			</li>
+			{{- end }}
+		</ul>
+	</div>
+</div>
+{{- end }}

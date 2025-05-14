@@ -1,6 +1,7 @@
 baseurl = "/"
 title = "Mainroad"
 languageCode = "nl-NL"
+defaultContentLanguage = "nl"
 theme = "mainroad"
 # googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
@@ -16,8 +17,10 @@ theme = "mainroad"
   readmore = false
   authorbox = false
   pager = true
-  post_meta = ["date", "categories"]
-  mainSections = ["post", "docs"]
+  post_meta = ["date", "event_date", "categories"]
+  mainSections = ["nieuws"]
+  dateformat = "1 January 2006"
+  highlightColor = "#043eac"
 
 [Params.logo]
   title = "Buurtvereniging Eiland-Brandt"
@@ -28,7 +31,7 @@ theme = "mainroad"
   list = "right"   # Configure layout for list pages
   single = "right" # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "taglist"]
+  widgets = ["search", "recent", "activiteiten", "taglist"]
 
 [Params.widgets]
   recent_num = 5
