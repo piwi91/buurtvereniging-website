@@ -4,7 +4,7 @@ description: ""
 date: 2025-05-13
 author: Pim Widdershoven
 categories:
-- website
+- digitalisering
 ---
 
 Buurtvereniging Eiland-Brandt heeft recentelijk een nieuwe website gelanceerd. Met deze ontwikkeling beoogt de vereniging haar leden en buurtbewoners op efficiënte wijze te informeren en te betrekken bij toekomstige activiteiten binnen onze buurt, door middel van digitale communicatie.

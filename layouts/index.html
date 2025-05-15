@@ -1,0 +1,29 @@
+{{ define "main" }}
+<main class="main list" role="main">
+	{{- with .Content }}
+	<div class="content main__content clearfix">
+		{{ . }}
+	</div>
+	{{- end }}
+
+	<h1>Laatste nieuws</h1>
+	
+	{{- $nieuwsPages := where site.RegularPages "Type" "nieuws" -}}
+	{{- with ($nieuwsPages.ByDate.Reverse | first 1) -}}
+		{{- range . }}
+			{{- .Render "summary" }}
+		{{- end }}
+	{{- end }}
+	
+	{{- $activiteiten := where site.RegularPages "Type" "activiteiten" -}}
+	{{- $activiteiten := sort $activiteiten ".Params.event_date" "asc" -}}
+	{{- if $activiteiten -}}
+		<h1>Volgende activiteit</h1>
+		{{- with ($activiteiten | first 1) -}}
+			{{- range . }}
+				{{- .Render "summary" }}
+			{{- end }}
+		{{- end }}
+	{{- end }}
+</main>
+{{ end }}

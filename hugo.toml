@@ -1,5 +1,5 @@
 baseurl = "/"
-title = "Mainroad"
+title = "Buurtvereniging Eiland - Brandt"
 languageCode = "nl-NL"
 defaultContentLanguage = "nl"
 theme = "mainroad"
@@ -14,7 +14,7 @@ theme = "mainroad"
   description = "De digitale omgeving van Buurtvereniging Eiland-Brandt waarmee je op de hoogte blijft van al onze activiteiten"
   opengraph = true
   twitter_cards = false
-  readmore = false
+  readmore = true
   authorbox = false
   pager = true
   post_meta = ["date", "event_date", "categories"]
@@ -31,7 +31,7 @@ theme = "mainroad"
   list = "right"   # Configure layout for list pages
   single = "right" # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "activiteiten", "taglist"]
+  widgets = ["search", "nieuws", "activiteiten", "taglist"]
 
 [Params.widgets]
   recent_num = 5
