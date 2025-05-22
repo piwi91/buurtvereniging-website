@@ -3123,9 +3123,9 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #ffffff;
 		border-bottom: solid 1px rgba(160, 160, 160, 0.3);
-		height: 56px;
+		height: 3.5em;
 		left: 0;
-		line-height: 56px;
+		line-height: 3.5em;
 		position: fixed;
 		top: 0;
 		width: 100%;
@@ -3149,8 +3149,8 @@ input, select, textarea {
 			}
 
 		#header h1 {
-			height: inherit;
-			line-height: inherit;
+			height: 3.5em;
+			line-height: 3.5em;
 			padding: 0 0 0 1.5em;
 			white-space: nowrap;
 		}
@@ -3165,8 +3165,8 @@ input, select, textarea {
 			-ms-flex: 1;
 			flex: 1;
 			border-left: solid 1px rgba(160, 160, 160, 0.3);
-			height: inherit;
-			line-height: inherit;
+			height: 3.5em;
+			line-height: 3.5em;
 			margin-left: 1.5em;
 			overflow: hidden;
 			padding-left: 1.5em;
