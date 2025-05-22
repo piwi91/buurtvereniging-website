@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+{{- if .Title -}}
+<header>
+	<div class="title">
+		<h2>{{ .Title }}</h2>
+		{{- with .Params.lead -}}
+		<p>{{ . }}</p>
+		{{- end -}}
+	</div>
+</header>
+{{- end -}}
+{{- with .Content -}}
+{{ . }}
+{{- end -}}
+
+{{ block "posts" . }}
+	{{- range .Paginator.Pages -}}
+	<!-- Post -->
+	{{- .Render "summary" -}}
+	{{- end -}}
+{{ end }}
+
+<!-- Pagination -->
+{{ block "pagination" . }}{{ partial "pagination.html" . }}{{ end }}
+{{ end }}

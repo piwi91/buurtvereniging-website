@@ -1,32 +1,20 @@
 {{ define "main" }}
-{{- $activities := sort .Pages ".Params.event_date" "asc" }}
-<main class="main list" role="main">
-	{{- with .Title }}
-	<header class="main__header">
-		<h1 class="main__title">{{ . }}</h1>
-	</header>
-	{{- end }}
-	{{- with .Content }}
-	<div class="content main__content clearfix">
-		{{ . }}
-	</div>
-	{{- end }}
-    <!-- Custom pagination because of sorting on event_date -->
-    {{ $paginator := (.Paginate $activities 10) }}
-    {{ range $paginator.Pages }}
-		{{- .Render "summary" }}
-	{{- end }}
-</main>
-{{ partial "pagination.html" . }}
 
-{{- if and (eq $paginator.TotalNumberOfElements 0) (not $.Content) }}
-<div class="warning">
-    {{ partial "svg/files.svg" (dict "class" "warning__icon") }}
-    <h3 class="warning__headline">Er zijn nog geen activiteiten!</h3>
-    <div class="warning__text">
-        <p class="warning__description">Kom binnenkort terug om te kijken of er nieuwe activiteiten staan gepland.</p>
-        <p class="warning__tip">Heb je een leuk idee? Neem contact met ons op!</p>
-    </div>
-</div>
-{{ end }}
+{{- if .Title }}
+{{ partial "post_header.html" . }}
+{{- end }}
+{{- with .Content }}
+{{ . }}
+{{- end }}
+
+{{- $activities := where site.RegularPages "Type" "activiteiten" -}}
+{{- $activities := sort $activities ".Params.event_date" "asc" -}}
+
+<!-- Custom pagination because of sorting on event_date -->
+{{ $paginator := (.Paginate $activities 10) }}
+{{ range $paginator.Pages }}
+	{{- .Render "summary" }}
+{{- end }}
+<!-- Pagination -->
+{{ block "pagination" . }}{{ partial "pagination.html" . }}{{ end }}
 {{ end }}

@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<!-- Post -->
+<article class="post">
+	{{ partial "post_header.html" . }}
+	{{- with (.Resources.Get .Params.Image) }}
+	{{ partial "post_image.html" . }}
+	{{- end }}
+	<section>
+		{{ .Content }}
+	</section>
+</article>
+
+{{ end }}

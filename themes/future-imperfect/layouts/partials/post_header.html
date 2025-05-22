@@ -1,0 +1,10 @@
+<header>
+	<div class="title">
+		
+		<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+		{{- with .Params.lead }}
+		<p>{{ . }}</p>
+		{{- end }}
+	</div>
+	{{ partial "post_meta.html" . }}
+</header>

@@ -1,26 +1,39 @@
-<article class="list__item post">
-	{{ partial "post_thumbnail.html" (dict "class" "list" "page" .) }}
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="{{ .RelPermalink }}" rel="bookmark">
-			{{ .Title }}
-			</a>
-		</h2>
-		{{- with .Params.lead }}
-		<p class="list__lead post__lead">{{ . }}</p>
-		{{- end }}
-		{{ with partial "post_meta.html" . -}}
-		<div class="list__meta meta">{{ . }}</div>
-		{{- end }}
+<!-- Post -->
+<article class="post">
+	<header>
+		<div class="title">
+			<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+			{{- with .Params.lead }}
+			<p>{{ . }}</p>
+			{{- end }}
+		</div>
+		<div class="meta">
+			<time class="published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+				{{- .Params.event_date | time | dateFormat ":date_long" }}
+			</time>
+			<span class="published">
+				{{ .Params.event_date_start_time | time | dateFormat "15:04" }} uur - {{ .Params.event_date_end_time | time | dateFormat "15:04" }} uur
+			</span>
+			{{- with .Params.Author }}
+				<a href="#" class="author"><span class="name">{{ . }}</span><!-- <img src="images/avatar.jpg" alt="" /> --></a>
+			{{- end }}
+		</div>
 	</header>
-	<div class="content list__excerpt post__content clearfix">
+	
+	{{- with (.Resources.Get .Params.Image) }}
+	{{ partial "post_image.html" . }}
+	{{- end }}
+	<section>
 		{{ .Summary }}
-	</div>
+	</section>
+
 	{{- if .Site.Params.readmore }}
 	{{- if .Truncated }}
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="{{ .RelPermalink }}">{{ T "read_more" }}</a>
-	</div>
+	<footer>
+		<ul class="actions">
+			<li><a href="{{ .RelPermalink }}" class="button large">Lees verder</a></li>
+		</ul>
+	</footer>
 	{{- end }}
 	{{- end }}
 </article>

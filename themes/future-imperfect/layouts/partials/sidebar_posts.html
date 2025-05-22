@@ -1,0 +1,28 @@
+<section>
+    {{- $activiteiten := where site.RegularPages "Type" "activiteiten" -}}
+	{{- $activiteiten := sort $activiteiten ".Params.event_date" "asc" -}}
+	{{- if $activiteiten -}}
+		<h1>Komende activiteiten</h1>
+		{{- with ($activiteiten | first 3) -}}
+        <ul class="posts">
+			{{- range . }}
+            <li>
+                <article>
+                    <header>
+                        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                        <time class="published" datetime="{{- .Params.event_date | time | dateFormat ":date_long" -}}">
+                            {{- .Params.event_date | time | dateFormat ":date_long" }}
+                        </time>
+                    </header>
+                    {{ $image := .Resources.Get .Params.Image }}
+                    {{- if $image }}
+                        {{ $image := $image.Fill "256x256" }}
+                        <a href="{{ .RelPermalink }}" class="image"><img src="{{ $image.RelPermalink }}" /></a>
+                    {{ end -}}
+                </article>
+            </li>
+			{{- end }}
+        </ul>
+		{{- end }}
+	{{- end }}
+</section>

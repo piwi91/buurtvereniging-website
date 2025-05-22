@@ -2,7 +2,7 @@ baseurl = "/"
 title = "Buurtvereniging Eiland - Brandt"
 languageCode = "nl-NL"
 defaultContentLanguage = "nl"
-theme = "mainroad"
+theme = "future-imperfect"
 # googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Author]
@@ -11,7 +11,8 @@ theme = "mainroad"
   avatar = "img/avatar.png"
 
 [Params]
-  description = "De digitale omgeving van Buurtvereniging Eiland-Brandt waarmee je op de hoogte blijft van al onze activiteiten"
+  about = "Buurtvereniging Eiland-Brandt verbindt de straten Eiland, Brandt en De Bilt in Stevensweert. Bij ons staan gezelligheid en saamhorigheid centraal. We organiseren het hele jaar door activiteiten waar alle leden, zowel jong als oud, aan mee kunnen doen. Zo zorgen we ervoor dat de buurt wordt samengebracht en buren elkaar leren kennen."
+  about_link = "/de-buurtvereniging"
   opengraph = true
   twitter_cards = false
   readmore = true
@@ -19,7 +20,7 @@ theme = "mainroad"
   pager = true
   post_meta = ["date", "event_date", "categories"]
   mainSections = ["nieuws"]
-  dateformat = "1 January 2006"
+  dateformat = "2 January 2006"
   highlightColor = "#043eac"
 
 [Params.logo]
@@ -42,6 +43,13 @@ theme = "mainroad"
   disableAliases = false
   pagerSize = 10
   path = 'page'
+
+[imaging]
+  anchor = 'Center'
+  bgColor = '#ffffff'
+  hint = 'photo'
+  quality = 80
+  resampleFilter = 'Lanczos'
 
 [menus]
   [[menus.main]]

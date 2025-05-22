@@ -1,0 +1,20 @@
+<!-- Post -->
+<article class="post">
+	{{ partial "post_header.html" . }}
+	{{- with (.Resources.Get .Params.Image) }}
+	{{ partial "post_image.html" . }}
+	{{- end }}
+	<section>
+		{{ .Summary }}
+	</section>
+
+	{{- if .Site.Params.readmore }}
+	{{- if .Truncated }}
+	<footer>
+		<ul class="actions">
+			<li><a href="{{ .RelPermalink }}" class="button large">Lees verder</a></li>
+		</ul>
+	</footer>
+	{{- end }}
+	{{- end }}
+</article>

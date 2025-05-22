@@ -1,0 +1,39 @@
+<!-- Menu -->
+<section id="menu">
+
+    <!-- Search -->
+        <!-- <section>
+            <form class="search" method="get" action="#">
+                <input type="text" name="query" placeholder="Search" />
+            </form>
+        </section> -->
+
+    <!-- Links -->
+        {{- if .Site.Menus.sidebar }}
+        <section>
+            <ul class="links">
+                {{- $currentNode := . }}
+                {{- range .Site.Menus.main }}
+                {{- if .Name }}
+                <li class="{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}active{{ end }}">
+                    <a href="{{ .URL }}">
+                        {{ .Pre }}
+                        <h3>{{ .Name }}</h3>
+                        {{ with .SubTitle }}<p>{{ .SubTitle }}</p>{{ end }}
+                        {{ .Post }}
+                    </a>
+                </li>
+                {{- end }}
+                {{- end }}
+            </ul>
+        </section>
+        {{- end }}
+
+    <!-- Actions -->
+        <!-- <section>
+            <ul class="actions stacked">
+                <li><a href="#" class="button large fit">Log In</a></li>
+            </ul>
+        </section> -->
+
+</section>

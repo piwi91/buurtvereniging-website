@@ -1,29 +1,30 @@
 {{ define "main" }}
-<main class="main list" role="main">
-	{{- with .Content }}
-	<div class="content main__content clearfix">
-		{{ . }}
-	</div>
-	{{- end }}
+	{{- if .Title -}}
+	<header>
+		<div class="title">
+			<h2>{{ .Title }}</h2>
+			{{- with .Params.lead -}}
+			<p>{{ . }}</p>
+			{{- end -}}
+		</div>
+	</header>
+	{{- end -}}
+	{{- with .Content -}}
+	{{ . }}
+	{{- end -}}
 
-	<h1>Laatste nieuws</h1>
-	
-	{{- $nieuwsPages := where site.RegularPages "Type" "nieuws" -}}
-	{{- with ($nieuwsPages.ByDate.Reverse | first 1) -}}
-		{{- range . }}
-			{{- .Render "summary" }}
-		{{- end }}
+	{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+	{{- range $paginator.Pages }}
+		{{- .Render "summary" }}
 	{{- end }}
-	
-	{{- $activiteiten := where site.RegularPages "Type" "activiteiten" -}}
-	{{- $activiteiten := sort $activiteiten ".Params.event_date" "asc" -}}
-	{{- if $activiteiten -}}
-		<h1>Volgende activiteit</h1>
-		{{- with ($activiteiten | first 1) -}}
-			{{- range . }}
-				{{- .Render "summary" }}
-			{{- end }}
-		{{- end }}
-	{{- end }}
-</main>
+	{{- if and (eq $paginator.TotalNumberOfElements 0) (not $.Content) }}
+		<div class="warning">
+			{{ partial "svg/files.svg" (dict "class" "warning__icon") }}
+			<h3 class="warning__headline">{{ T "noposts_warning_title" | safeHTML }}</h3>
+			<div class="warning__text">
+				<p class="warning__description">{{ T "noposts_warning_description" | safeHTML }}</p>
+				<p class="warning__tip">{{ T "noposts_warning_tip" | safeHTML }}</p>
+			</div>
+		</div>
+	{{ end }}
 {{ end }}

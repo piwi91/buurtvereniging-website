@@ -1,8 +1,9 @@
 ---
 title: Buurtvereniging Eiland-Brandt gaat digitaal
 description: ""
-date: 2025-05-13
+date: 2025-05-22
 author: Pim Widdershoven
+image: image.jpeg
 categories:
 - digitalisering
 ---

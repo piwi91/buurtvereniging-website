@@ -1,0 +1,31 @@
+{{ define "main" }}
+<!-- Post -->
+<article class="post">
+	<header>
+		<div class="title">
+			<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+			{{- with .Params.lead }}
+			<p>{{ . }}</p>
+			{{- end }}
+		</div>
+		<div class="meta">
+			<time class="published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+				{{- .Params.event_date | time | dateFormat ":date_long" }}
+			</time>
+			<span class="published">
+				{{ .Params.event_date_start_time | time | dateFormat "15:04" }} uur - {{ .Params.event_date_end_time | time | dateFormat "15:04" }} uur
+			</span>
+			{{- with .Params.Author }}
+				<a href="#" class="author"><span class="name">{{ . }}</span><!-- <img src="images/avatar.jpg" alt="" /> --></a>
+			{{- end }}
+		</div>
+	</header>
+	
+	{{- with (.Resources.Get .Params.Image) }}
+	{{ partial "post_image.html" . }}
+	{{- end }}
+	<section>
+		{{ .Content }}
+	</section>
+</article>
+{{ end }}

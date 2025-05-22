@@ -1,0 +1,7 @@
+{{- $logoTitle := .Site.Params.logo.title | default .Site.Title -}}
+
+<header id="header">
+    {{ with $logoTitle }}<h1><a href="{{ "" | relLangURL }}"{{ with $logoTitle }} title="{{ . }}"{{ end }}>{{ . }}</a></h1>{{ end }}
+    {{ partial "header_links.html" . }}
+    <!-- {{ partial "header_main.html" . }} -->
+</header>

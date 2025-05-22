@@ -1,0 +1,16 @@
+{{- $logoTitle := .Site.Params.logo.title | default .Site.Title -}}
+{{- $logoImage := .Site.Params.logo.image -}}
+
+<section id="sidebar">
+    <!-- Mini Posts -->
+    {{ partial "sidebar_mini_posts.html" . }}
+    
+    <!-- Posts List -->
+    {{ partial "sidebar_posts.html" . }}
+
+    <!-- About -->
+    {{ partial "sidebar_about.html" . }}
+
+    <!-- Footer -->
+    {{ partial "sidebar_footer.html" . }}
+</section>
