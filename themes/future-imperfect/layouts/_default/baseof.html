@@ -6,6 +6,7 @@
 		<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Params.Description }}{{ end }}">
 		{{- $style := resources.Get "css/main.css" | resources.ExecuteAsTemplate "css/main.css" . }}
 		<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+		<link rel="stylesheet" href="{{ "css/fontawesome-all.min.css" | relURL }}">
 		{{- range .Site.Params.customCSS }}
 		<link rel="stylesheet" href="{{ . | relURL }}">
 		{{- end }}
@@ -50,11 +51,11 @@
 				{{ block "sidebar" . }}{{ partial "sidebar.html" . }}{{ end }}
 			</div>
 		<!-- Scripts -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/browser.min.js"></script>
-		<script src="js/breakpoints.min.js"></script>
-		<script src="js/util.js"></script>
-		<script src="js/main.js"></script>
+		<script src="{{ "js/jquery.min.js" | relURL }}"></script>
+		<script src="{{ "js/browser.min.js" | relURL }}"></script>
+		<script src="{{ "js/breakpoints.min.js" | relURL }}"></script>
+		<script src="{{ "js/util.js" | relURL }}"></script>
+		<script src="{{ "js/main.js" | relURL }}"></script>
 		{{- range .Site.Params.customJS -}}
 		<script src="{{ . | relURL }}"></script>
 		{{- end -}}
