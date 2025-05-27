@@ -37,6 +37,6 @@ Jaarlijks wordt de contributie geïnt in het eerste kwartaal van het jaar. de co
 
 ## Lid worden
 
-Wil je ook meedoen met de activiteiten georganiseerd door onze buurtvereniging? Wordt dan snel lid! Stuur een e-mail naar bveilandbrandt@gmail.com voor meer informatie.
+Wilt u ook meedoen met de activiteiten georganiseerd door onze buurtvereniging? Wordt dan snel lid! Stuur een e-mail naar bveilandbrandt@gmail.com voor meer informatie.
 
 _In de toekomst wordt het mogelijk om u via de website in te schrijven._
