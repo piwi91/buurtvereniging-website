@@ -2,7 +2,6 @@
     <div class="mini-posts">
         {{- $nieuwsPages := where site.RegularPages "Type" "nieuws" -}}
         {{- with ($nieuwsPages.ByDate.Reverse | first 3) -}}
-            <h3>Nieuwsberichten</h3>
             {{- range . }}
                 <!-- Mini Post -->
                 <article class="mini-post">
@@ -17,7 +16,7 @@
                     {{ $image := .Resources.Get .Params.Image }}
                     {{- if $image }}
                         {{ $image := $image.Fill "400x200" }}
-                        <a href="{{ .RelPermalink }}" class="image"><img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" /></a>
+                        <a href="{{ .RelPermalink }}" class="image"><img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" /></a>
                     {{ end -}}
                 </article>
             {{- end }}

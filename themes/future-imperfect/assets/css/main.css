@@ -3288,10 +3288,22 @@ input, select, textarea {
 				padding: 0 0.5em 0 0;
 			}
 
+		#header #burger {
+			display: none;
+		}
+
+		#menu .title {
+			text-align: right;
+		}
+
 		@media screen and (max-width: 980px) {
 
 			#header .links {
 				display: none;
+			}
+
+			#header #burger {
+				display: block;
 			}
 
 		}
