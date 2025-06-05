@@ -5,6 +5,11 @@ defaultContentLanguage = "nl"
 theme = "future-imperfect"
 # googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[markup.goldmark.renderer]
+unsafe= true
+
 [Author]
   name = "Buurtvereniging Eiland-Brandt"
   bio = "Waar gezelligheid en saamhorigheid de buurt samenbrengen"

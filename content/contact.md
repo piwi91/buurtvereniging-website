@@ -11,6 +11,6 @@ pager: false
 
 Heeft u vragen, opmerkingen of suggesties? Wilt u zich aanmelden als lid van onze buurtvereniging, of wilt u meer informatie over onze activiteiten? Neem dan gerust contact met ons op! 
 
-Stuur een e-mail met uw vraag of opmerking naar bveilandbrandt@gmail.com.
+Stuur een e-mail met uw vraag of opmerking naar info@buurtvereniging-eiland-brandt.nl.
 
 Wij zien uw e-mail graag tegemoet en zullen zo snel mogelijk reageren.

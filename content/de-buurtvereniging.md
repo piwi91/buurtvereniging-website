@@ -37,6 +37,17 @@ Jaarlijks wordt de contributie geïnt in het eerste kwartaal van het jaar. de co
 
 ## Lid worden
 
-Wilt u ook meedoen met de activiteiten georganiseerd door onze buurtvereniging? Wordt dan snel lid! Stuur een e-mail naar bveilandbrandt@gmail.com voor meer informatie.
+Wilt u ook meedoen met de activiteiten georganiseerd door onze buurtvereniging? Wordt dan snel lid! U kunt via onderstaand formulier uw lidmaatschap direct aanvragen.
+Wenst u meer informatie? Stuur dan een e-mail naar info@buurtvereniging-eiland-brandt.nl.
 
-_In de toekomst wordt het mogelijk om u via de website in te schrijven._
+### Aanmeldformulier lidmaatschap
+
+Is het aanmeldformulier niet zichtbaar of niet leesbaar? [Klik hier om het aanmeldformulier in een apart scherm te openen.](https://forms.office.com/Pages/ResponsePage.aspx?id=1YWp35HemUClHZPM_E8n8iJdkurhPsxNnE39J7aHTbxUMkFaRjBDRFEwVVNUUUxROThJMFhFNTlZMCQlQCN0PWcu)
+
+<iframe width="100%" height="100%" src="https://forms.office.com/Pages/ResponsePage.aspx?id=1YWp35HemUClHZPM_E8n8iJdkurhPsxNnE39J7aHTbxUMkFaRjBDRFEwVVNUUUxROThJMFhFNTlZMCQlQCN0PWcu&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh; margin-bottom: 30px;" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+
+## Lidmaatschap opzeggen
+
+Wilt u uw lidmaatschap opzeggen? Dat vinden wij jammer om te horen. Stuur een e-mail naar info@buurtvereniging-eiland-brandt.nl en wij verwerken uw opzegging zo spoedig mogelijk.
+
+_Restitutie van reeds betaalde contributie is niet mogelijk._
