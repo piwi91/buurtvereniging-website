@@ -7,7 +7,7 @@ event_date_end_time: 2025-08-23 23:00:00
 image: Barbecue.jpg
 ---
 
-Noteer in uw agenda **vrijdag 23 augustus vanaf half 5** de Buurtvereniging Eiland-Brandt Zomer BBQ! We kijken uit naar een gezellige en leuke Zomer BBQ voor jong en oud waar er kan worden genoten van lekker eten en drinken. Vanaf half 5 bent u van harte welkom om samen te genieten van lekker eten en goed gezelschap. De BBQ is voor jong en oud: een mooie gelegenheid om elkaar (beter) te leren kennen en samen de zomer af te sluiten.
+Noteer in uw agenda **zaterdag 23 augustus vanaf half 5** de Buurtvereniging Eiland-Brandt Zomer BBQ! We kijken uit naar een gezellige en leuke Zomer BBQ voor jong en oud waar er kan worden genoten van lekker eten en drinken. Vanaf half 5 bent u van harte welkom om samen te genieten van lekker eten en goed gezelschap. De BBQ is voor jong en oud: een mooie gelegenheid om elkaar (beter) te leren kennen en samen de zomer af te sluiten.
 
 We zorgen voor een gevarieerd aanbod met vlees en vegetarische opties, zodat er voor iedereen iets lekkers op het rooster ligt. Natuurlijk is er ook gedacht aan bijgerechten, salades en stokbrood. Voor de kinderen zijn er leuke activiteiten en volop ruimte om te spelen.
 
@@ -21,8 +21,4 @@ Samen maken we er een gezellige avond van! We hopen iedereen te zien op 23 augus
 
 ## Meld u nu aan!
 
-Via onderstaand formulier kunt u zich eenvoudig aanmelden. Na aanmelding ontvangt u een e-mail naar het opgegeven e-mailadres met aanvullende informatie.
-
-Ziet u geen aanmeldformulier of is het niet goed leesbaar? [Klik dan hier om het aanmeldformulier in een apart scherm te openen.](https://forms.office.com/Pages/ResponsePage.aspx?id=1YWp35HemUClHZPM_E8n8iJdkurhPsxNnE39J7aHTbxUMjQyMVdWV1BNUlo1TllYNldRRjkzSEJBUyQlQCN0PWcu)
-
-<iframe width="100%" height="100%" src="https://forms.office.com/Pages/ResponsePage.aspx?id=1YWp35HemUClHZPM_E8n8iJdkurhPsxNnE39J7aHTbxUMjQyMVdWV1BNUlo1TllYNldRRjkzSEJBUyQlQCN0PWcu&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+Het is helaas niet meer mogelijk u aan te melden voor deze activiteit.
