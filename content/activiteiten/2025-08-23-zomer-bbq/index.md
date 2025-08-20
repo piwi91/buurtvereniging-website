@@ -7,7 +7,7 @@ event_date_end_time: 2025-08-23 23:00:00
 image: Barbecue.jpg
 ---
 
-Noteer in uw agenda **zaterdag 23 augustus vanaf half 5** de Buurtvereniging Eiland-Brandt Zomer BBQ! We kijken uit naar een gezellige en leuke Zomer BBQ voor jong en oud waar er kan worden genoten van lekker eten en drinken. Vanaf half 5 bent u van harte welkom om samen te genieten van lekker eten en goed gezelschap. De BBQ is voor jong en oud: een mooie gelegenheid om elkaar (beter) te leren kennen en samen de zomer af te sluiten.
+Noteer in uw agenda **zaterdag 23 augustus vanaf 5 uur** de Buurtvereniging Eiland-Brandt Zomer BBQ! We kijken uit naar een gezellige en leuke Zomer BBQ voor jong en oud waar er kan worden genoten van lekker eten en drinken. Vanaf half 5 bent u van harte welkom om samen te genieten van lekker eten en goed gezelschap. De BBQ is voor jong en oud: een mooie gelegenheid om elkaar (beter) te leren kennen en samen de zomer af te sluiten.
 
 We zorgen voor een gevarieerd aanbod met vlees en vegetarische opties, zodat er voor iedereen iets lekkers op het rooster ligt. Natuurlijk is er ook gedacht aan bijgerechten, salades en stokbrood. Voor de kinderen zijn er leuke activiteiten en volop ruimte om te spelen.
 
