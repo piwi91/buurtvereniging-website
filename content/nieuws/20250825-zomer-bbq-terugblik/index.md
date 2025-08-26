@@ -20,7 +20,7 @@ De kinderen hebben zich uitstekend vermaakt met diverse spelletjes en de trampol
 Een bijzonder woord van dank gaat uit naar Maurice voor het beschikbaar stellen van deze geweldige locatie. Daarnaast willen wij alle vrijwilligers bedanken die hebben meegeholpen bij de voorbereiding. Zonder jullie inzet zou zo'n geslaagde avond niet mogelijk zijn geweest. Van het opzetten tot de afronding - elke bijdrage werd enorm gewaardeerd!
 
 ## Volgende Activiteit
-Het was weer een mooie gelegenheid om onze buurt samen te brengen en de zomer feestelijk af te sluiten. We hopen u graag terug te zien op onze volgende buurtactiviteit! Houd onze website in de gaten voor aankomende evenementen en vergeet niet om u aan te melden.
+Het was weer een mooie gelegenheid om onze buurt samen te brengen en de zomer feestelijk af te sluiten. We hopen u graag terug te zien op onze volgende buurtactiviteit! Houd onze website in de gaten voor aankomende activiteiten en vergeet niet om u aan te melden.
 
 Hieronder enkele sfeerfoto's van de Zomer BBQ.
 
