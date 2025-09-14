@@ -8,7 +8,7 @@
 {{- end }}
 
 {{- $activities := where site.RegularPages "Type" "activiteiten" -}}
-{{- $activities := sort $activities ".Params.event_date" "asc" -}}
+{{- $activities := sort $activities ".Params.event_date" "desc" -}}
 
 <!-- Custom pagination because of sorting on event_date -->
 {{ $paginator := (.Paginate $activities 10) }}

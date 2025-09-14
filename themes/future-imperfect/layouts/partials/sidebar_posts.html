@@ -1,6 +1,14 @@
 <section>
-    {{- $activiteiten := where site.RegularPages "Type" "activiteiten" -}}
-	{{- $activiteiten := sort $activiteiten ".Params.event_date" "asc" -}}
+    {{ $now := now }}
+    {{ $recent := where .Site.RegularPages "Type" "in" "activiteiten" }}
+    {{ $recent_with_date := where $recent ".Params.event_date" "!=" nil }}
+    {{ $upcoming := slice }}
+    {{ range $recent_with_date }}
+    {{ if ge (time .Params.event_date) $now }}
+        {{ $upcoming = $upcoming | append . }}
+    {{ end }}
+    {{ end }}
+    {{ $activiteiten := sort $upcoming "Params.event_date" "asc" }}
 	{{- if $activiteiten -}}
 		<h1>Komende activiteiten</h1>
 		{{- with ($activiteiten | first 3) -}}
