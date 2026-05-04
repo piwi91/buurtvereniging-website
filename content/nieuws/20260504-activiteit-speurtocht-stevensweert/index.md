@@ -3,6 +3,7 @@ title: "7 Juni: Speurtocht door Stevensweert"
 description: ""
 date: 2026-05-04
 author: Pim Widdershoven
+image: stevensweert.jpg
 categories:
 - activiteiten
 ---

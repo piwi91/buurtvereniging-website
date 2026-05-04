@@ -4,6 +4,7 @@ description: ""
 event_date: 2026-06-07
 event_date_start_time: 2026-06-07 13:00:00
 event_date_end_time: 2026-06-07 16:00:00
+image: stevensweert.jpg
 ---
 
 Op **zondag 7 juni** nodigen wij jullie van harte uit voor onze speurtocht/wandeltocht door Stevensweert — een perfect uitje voor het hele gezin!
